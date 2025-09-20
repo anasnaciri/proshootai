@@ -1,0 +1,39 @@
+---
+import TestimonialCard from '../testimonials/TestimonialCard.astro';
+
+const testimonials = [
+  {
+    name: "Sarah Chen",
+    role: "Art Director",
+    company: "Creative Studios",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    content: "ImageAI has revolutionized our creative workflow. We can now generate concept art in minutes instead of days."
+  },
+  {
+    name: "James Wilson",
+    role: "Marketing Manager",
+    company: "Digital Brands",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    content: "The quality and speed of image generation is incredible. It's become an essential tool for our marketing campaigns."
+  },
+  {
+    name: "Elena Rodriguez",
+    role: "Independent Artist",
+    company: "Freelance",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    content: "As a freelancer, ImageAI helps me deliver more value to my clients while saving time on repetitive tasks."
+  }
+];
+---
+<section id="testimonials" class="py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">
+      Trusted by Creative Professionals
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {testimonials.map(testimonial => (
+        <TestimonialCard {...testimonial} />
+      ))}
+    </div>
+  </div>
+</section>

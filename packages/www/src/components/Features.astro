@@ -1,0 +1,40 @@
+---
+const features = [
+  {
+    title: "Advanced AI Technology",
+    description: "Powered by state-of-the-art machine learning models for stunning results",
+    icon: "🤖"
+  },
+  {
+    title: "Lightning Fast",
+    description: "Generate high-quality images in seconds, not minutes",
+    icon: "⚡"
+  },
+  {
+    title: "Unlimited Creativity",
+    description: "Create any style, any scene, any concept you can imagine",
+    icon: "🎨"
+  },
+  {
+    title: "Easy to Use",
+    description: "Simple interface designed for both beginners and professionals",
+    icon: "✨"
+  }
+];
+---
+<section id="features" class="py-20 px-6 bg-dark-secondary">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">
+      Why Choose <span class="text-primary">ImageAI</span>
+    </h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {features.map(feature => (
+        <div class="p-6 rounded-xl bg-dark border border-gray-800 hover:border-primary-600 transition-colors">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="text-xl font-semibold mb-2">{feature.title}</h3>
+          <p class="text-gray-400">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 656 656" xmlns="http://www.w3.org/2000/svg">
+    <clipPath id="clip">
+      <path d="M312.103 47.0916C319.201 17.1925 322.75 2.24295 324.941 0.94471C327.015 -0.285107 328.985 -0.285107 331.059 0.94471C333.25 2.24295 336.799 17.1925 343.897 47.0916C358.275 107.652 384.059 184.732 427.664 228.336C471.268 271.941 548.348 297.725 608.908 312.103C638.807 319.201 653.757 322.75 655.055 324.941C656.285 327.015 656.285 328.985 655.055 331.059C653.757 333.25 638.807 336.799 608.908 343.897C548.348 358.275 471.268 384.059 427.664 427.664C384.059 471.268 358.275 548.348 343.897 608.908C336.799 638.807 333.25 653.757 331.059 655.055C328.985 656.285 327.015 656.285 324.941 655.055C322.75 653.757 319.201 638.807 312.103 608.908C297.725 548.348 271.941 471.268 228.336 427.664C184.732 384.059 107.652 358.275 47.0916 343.897C17.1925 336.799 2.24295 333.25 0.94471 331.059C-0.285107 328.985 -0.285107 327.015 0.94471 324.941C2.24295 322.75 17.1925 319.201 47.0916 312.103C107.652 297.725 184.732 271.941 228.336 228.336C271.941 184.732 297.725 107.652 312.103 47.0916Z" />
+    </clipPath>
+
+    <foreignObject x="0" y="0" width="656" height="656" clip-path="url(#clip)">
+        <div class="gradient" xmlns="http://www.w3.org/1999/xhtml" />
+    </foreignObject>
+    
+    <style>
+        
+        .gradient{
+            width: 656px;
+            height: 656px;
+            border-radius: 50%;
+            background-image: conic-gradient(from 180deg, #FFFFFF 0%, #FFFFFF00 100%);  
+        }
+
+    </style>
+</svg>
+
+
+    <!-- <radialGradient id="paint0_angular_234_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(328 328) rotate(90) scale(369)">
+    <stop stop-color="white"/>
+    <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint1_angular_234_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(328 328) rotate(90) scale(369)">
+    <stop stop-color="white"/>
+    <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient> -->

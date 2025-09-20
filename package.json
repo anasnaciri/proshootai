@@ -1,0 +1,32 @@
+{
+  "name": "proshootai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npx sst dev",
+    "dash": "pnpm --filter=\"@proshootai/dashboard\" dev",
+    "build": "pnpm --filter=\"@proshootai/*\" build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.12.3",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/aws-lambda": "8.10.145",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "sst": "3.2.76"
+  }
+}

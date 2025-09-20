@@ -1,0 +1,40 @@
+---
+const currentYear = new Date().getFullYear();
+
+const links = {
+  Product: ['Features', 'Pricing', 'Examples', 'Documentation'],
+  Company: ['About', 'Blog', 'Careers', 'Contact'],
+  Legal: ['Privacy', 'Terms', 'Security']
+};
+---
+<footer class="py-12 px-6 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <div>
+        <div class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-300 bg-clip-text text-transparent mb-4">
+          ImageAI
+        </div>
+        <p class="text-gray-400">
+          Transform your ideas into stunning images with the power of AI.
+        </p>
+      </div>
+      {Object.entries(links).map(([category, items]) => (
+        <div>
+          <h3 class="font-semibold mb-4">{category}</h3>
+          <ul class="space-y-2">
+            {items.map(item => (
+              <li>
+                <a href="#" class="text-gray-400 hover:text-primary-600 transition-colors">
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="text-center text-gray-400 text-sm">
+      © {currentYear} ImageAI. All rights reserved.
+    </div>
+  </div>
+</footer>

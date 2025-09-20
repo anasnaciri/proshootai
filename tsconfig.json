@@ -1,0 +1,13 @@
+{
+  //"extends": "./.sst/platform/tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./node_modules/@types", "./"],
+    "types": ["sst-env"],
+    "lib": ["DOM", "ESNext"]
+  }
+  //"exclude": ["packages/"]
+}
